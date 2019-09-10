@@ -1,3 +1,19 @@
 ﻿body {
     font-family: 'Fira Sans', sans-serif;
 }
+.jumbotron, .discounts
+{
+    
+    border:solid 1px #ccc;
+}
+
+.discounts {
+    border-radius: 5px;
+    box-shadow: rgba(30,30,30,.3) 5px 5px;
+}
+
+.toast {
+    position: absolute;
+    top: 65px;
+    right: 10px;
+}

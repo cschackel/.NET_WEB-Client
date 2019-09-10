@@ -30,7 +30,7 @@ namespace Client
                 
             DefaultFileNames = new List<string> { "index.html" }
             });
-
+            app.UseDefaultFiles();
             app.UseStaticFiles();
         }
     }
