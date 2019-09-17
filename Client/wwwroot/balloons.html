@@ -9,10 +9,30 @@
     <!-- pickadate -->
     <link rel="stylesheet" href="js/pickadate/pickadate.js-3.6.2/lib/themes/default.css" />
     <link rel="stylesheet" href="js/pickadate/pickadate.js-3.6.2/lib/themes//default.date.css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+    <link rel="stylesheet" href="css/Balloons.css" />
+
 </head>
 <body>
-    <div class="container">
-        <h1>Huzzah!</h1><hr />
+
+    <div class="toast" id="toast">
+        <div class="toast-header">
+            <strong class="mr-auto" id="product">Oops!</strong>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="toast-body">
+            <p>Please Select at least 1 Balloon</p>
+        </div>
+    </div>
+
+
+    <div class="container" id="mainContent">
+        <h1 id="pageHead" class="animated">Huzzah!</h1><hr />
 
         <form role="form">
             <div class="row">
@@ -27,12 +47,32 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <img src="media/red.png" class="ball" alt="red balloon" id="redImg" />
-                    <img src="media/green.png" class="ball" alt="green balloon" id="greenImg" />
-                    <img src="media/blue.png" class="ball" alt="blue balloon" id="blueImg" />
+                    <img src="media/red.png" class="ball" alt="red balloon" value="red" id="redImg" />
+                    <img src="media/green.png" class="ball" alt="green balloon" value="green" id="greenImg" />
+                    <img src="media/blue.png" class="ball" alt="blue balloon" value="blue" id="blueImg" />
                 </div>
             </div>
+
         </form>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Select your favorite balloons</h5>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="red">
+                    <label class="form-check-label" for="red">Red balloons</label>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="green">
+                    <label class="form-check-label" for="green">Green balloons</label>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="blue">
+                    <label class="form-check-label" for="blue">Blue balloons</label>
+                </div>
+                <button type="button" class="btn btn-outline-dark" id="selectAll">Select/Deselect All</button>
+            </div>
+        </div>
+        <button type="button" class="btn btn-outline-primary mt-3" id="submit">Submit</button>
     </div>
 
     <!-- jQuery -->

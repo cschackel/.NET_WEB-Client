@@ -1,0 +1,15 @@
+﻿h1 {
+    font-family: 'Shrikhand', cursive;
+    display:inline-block;
+}
+.ball
+{
+    visibility:hidden;
+}
+/*
+#toast
+{
+    position:fixed;
+    z-index:10000;
+}
+*/
